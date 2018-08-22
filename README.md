@@ -21,7 +21,7 @@ Further examples on how to use the code can be found in the IPython notebook in 
 
 The .py program can be used as follow (you will need to install regex and use python 3):
 
-```python word_shapes.py -text_path PATH_TO_TEXT_FILE```
+```$ python word_shapes.py -text_path PATH_TO_TEXT_FILE```
 
 ```
 Shape                                      Examples

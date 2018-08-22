@@ -61,16 +61,16 @@ def generate():
     shape_counts_sorted = sorted(shape_counts.items(), key=lambda x: x[1], reverse=True)
 
     # print some output
-    s = "{0:10} {1:20} {2:20} {3:20} {4:20} {5:20}"
+    s = "{0:10} {1:20} {2:20} {3:20} {4:20}"
 
-    print("{0:10} {1:>50}".format('Shape', 'Examples'))
-    print(''.join('-' for _ in range(110)))
+    print("{0:10} {1:>40}".format('Shape', 'Examples'))
+    print(''.join('-' for _ in range(90)))
 
     for (w_shape, count) in shape_counts_sorted[:50]:
         words = [w for w in words_per_shape[w_shape]]
         
-        if len(words) > 5:
-            print(s.format(w_shape, *words[:5]))
+        if len(words) > 4:
+            print(s.format(w_shape, *words[:4]))
 
 
 def main():
